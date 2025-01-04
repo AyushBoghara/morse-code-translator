@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TranslateActivity"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_gravity="center"
+        android:layout_width="380dp"
+        android:backgroundTint="@color/white"
+        android:layout_height="wrap_content"
+        app:cardElevation="3dp"
+        app:cardCornerRadius="10dp"
+        app:cardUseCompatPadding="true"
+        android:layout_marginTop="15dp"
+        tools:targetApi="lollipop">
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          tools:ignore="UselessLeaf"
+          android:layout_marginTop="10dp"
+          android:layout_marginStart="10dp"
+          android:layout_marginEnd="10dp">
+
+          <TextView
+              android:id="@+id/english"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:fontFamily="@font/chango"
+              android:gravity="center"
+              android:text="@string/text"
+              android:textColor="@color/black"
+              android:textSize="25sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+           <com.google.android.material.textfield.TextInputEditText
+               android:id="@+id/enText"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:ems="10"
+               android:lines="5"
+               android:inputType="textMultiLine"
+               android:gravity="top"
+               android:textSize="25sp"
+               android:textColor="@color/black"
+               android:overScrollMode="always"
+               android:scrollbars="vertical"
+               android:scrollbarStyle="insideInset"
+               android:scrollHorizontally="false"
+               android:background="@color/editTextBackGround"
+               tools:ignore="Autofill,LabelFor,SpeakableTextPresentCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="5dp"
+              android:layout_marginBottom="5dp">
+
+              <ImageView
+                  android:id="@+id/copy"
+                  android:layout_width="30dp"
+                  android:layout_height="50dp"
+                  android:src="@drawable/ic_copy"
+                  tools:ignore="ContentDescription" />
+
+              <ImageView
+                  android:id="@+id/paste"
+                  android:layout_width="30dp"
+                  android:layout_height="50dp"
+                  android:layout_marginStart="23dp"
+                  android:src="@drawable/ic_paste"
+                  tools:ignore="ContentDescription,RtlCompat" />
+
+              <ImageView
+                  android:id="@+id/delete"
+                  android:layout_width="30dp"
+                  android:layout_height="50dp"
+                  android:layout_marginStart="23dp"
+                  android:src="@drawable/ic_delete"
+                  tools:ignore="ContentDescription,RtlCompat" />
+
+              <ImageView
+                  android:id="@+id/share"
+                  android:layout_width="30dp"
+                  android:layout_height="50dp"
+                  android:layout_marginStart="23dp"
+                  android:src="@drawable/ic_share"
+                  tools:ignore="ContentDescription,RtlCompat" />
+          </LinearLayout>
+      </LinearLayout>
+   </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/change"
+        android:layout_gravity="center"
+        android:layout_width="120dp"
+        android:layout_height="70dp"
+        app:cardElevation="2dp"
+        app:cardCornerRadius="10dp"
+        app:cardUseCompatPadding="true"
+        android:backgroundTint="@color/white"
+        tools:targetApi="lollipop">
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_transaction"
+            tools:ignore="ContentDescription" />
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_gravity="center"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        app:cardElevation="3dp"
+        app:cardCornerRadius="10dp"
+        app:cardUseCompatPadding="true"
+        android:backgroundTint="@color/white"
+        tools:targetApi="lollipop" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="UselessLeaf"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp">
+
+            <TextView
+                android:id="@+id/morse"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/chango"
+                android:gravity="center"
+                android:text="@string/morse"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                <TextView
+                    android:id="@+id/morseText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:lines="5"
+                    android:gravity="top"
+                    android:text=""
+                    android:textSize="30sp"
+                    android:textColor="@color/black"
+                    android:overScrollMode="always"
+                    android:scrollbars="vertical"
+                    android:scrollbarStyle="insideInset"
+                    android:scrollHorizontally="false"
+                    android:background="@color/editTextBackGround"
+                    tools:ignore="Autofill,LabelFor,SpeakableTextPresentCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp">
+
+                <ImageView
+                    android:id="@+id/copy1"
+                    android:layout_width="30dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_copy"
+                    tools:ignore="ContentDescription" />
+
+                <ImageView
+                    android:id="@+id/share1"
+                    android:layout_width="30dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="35dp"
+                    android:src="@drawable/ic_share"
+                    tools:ignore="ContentDescription,RtlCompat" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

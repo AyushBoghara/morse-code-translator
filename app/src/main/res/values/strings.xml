@@ -1,0 +1,15 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Morse Code Translator</string>
+    <string name="translate_text_into_morse_code">Translate Text Into Morse Code</string>
+    <string name="translate">Translate</string>
+    <string name="dictionary">Dictionary</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="symbols">Symbols</string>
+    <string name="alphabets">Alphabets</string>
+    <string name="numbers">Numbers</string>
+    <string name="text">English</string>
+    <string name="name">Name</string>
+    <string name="morse">Morse</string>
+    <string name="preText" tools:ignore="TypographyEllipsis">Tour Morse translation here...</string>
+</resources>
