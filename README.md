@@ -8,8 +8,12 @@ This repository contains an ** Morse Code Translator app** for translating text 
 - **Offline Support**: Translate without an active internet connection.
 
 ## Screenshots
-*(Add screenshots of the app UI here)*
+Screenshots of the app UI here
 
+ [Screenshots 1 ](https://github.com/AyushBoghara/morse-code-translator/blob/main/1.png)
+ 
+ [Screenshots 2](https://github.com/AyushBoghara/morse-code-translator/blob/main/2.png)
+ 
 ## Getting Started
 
 ### Prerequisites
